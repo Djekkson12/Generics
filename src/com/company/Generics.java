@@ -3,22 +3,30 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 
-public class Generics {
+public class Generics<G extends Teams> {
+    private Leagues<G> league;
 
+    public Generics(Leagues league){
+        this.league = league;
 
-    public class League< T > {
-        public  TreeSet container;
-        TreeSet addTeam(String teamName){
-            return new TreeSet<String>(Comparator.comparing(String::length));
-        }
-        public void printLeague(League l){
-
-
-        }
     }
 
+    public void addTeam(G team){
+        league.addTeam(team);
+    }
 
+    public void print(){
+        league.printTeams();
+    }
 
-
+    public Leagues<G> getLeague() {
+        return league;
+    }
 }
+
+
+
+
+
+
 
