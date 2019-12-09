@@ -11,6 +11,8 @@ public class Leagues<T extends Teams> {
         teams.add(team);
     }
 
+
+
     public void printTeams(){
         System.out.println(teams);
     }

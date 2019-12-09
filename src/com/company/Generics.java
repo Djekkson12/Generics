@@ -9,6 +9,8 @@ public class Generics<G extends Teams> {
     public Generics(Leagues league){
         this.league = league;
 
+
+
     }
 
     public void addTeam(G team){
