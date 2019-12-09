@@ -15,7 +15,6 @@ public class Main {
         RugbyTeam rugbyTeam4 = new RugbyTeam("Ireland Team");
 
 
-
         FootballTeam footballTeam1 = new FootballTeam("England Team");
         FootballTeam footballTeam2 = new FootballTeam("Germany Team");
         FootballTeam footballTeam3 = new FootballTeam("Brazil Team");
